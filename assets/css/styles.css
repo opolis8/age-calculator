@@ -158,8 +158,8 @@ body {
   }
 
   .icon-arrow {
-    position: absolute;
-    top: 36%;
-    left: 40%;
+    position: relative;
+    top: -2rem;
+    left: 0rem;
   }
 }
