@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <title><h1>Age calculator app</h1></title>
+    <link rel="stylesheet" href="assets/css/styles.css"
+
+  </head>
+  <body>
+    <main class="container">
+      <div class="inputs-container">
+        <div class="days">
+          <label for="number" class="day day-error-js">Day</label>
+          <input type="number" class="day-number input-error" name="day" id="day" placeholder="DD" />
+          <p class="day-error error error-input js-day-error">this field is required</p>
+        </div>
+        <div class="months">
+          <label for="" class="month month-error-js">Month</label>
+          <input class="month-number input-error " type="number" name="month" id="year" placeholder="MM"/>
+          <p class="month-error error js-month-error">this field is required</p>
+        </div>
+        <div class="years">
+          <label for="year" class="year year-error-js">Year</label>
+          <input type="number" class="year-number input-error " name="year" id="year" placeholder="YYYY" />
+          <p class="year-error error js-year-error">this field is required</p>
+        </div>
+      </div>
+      <div class="button"><div class="line"></div><button class="icon-arrow"><img src="assets/images/icon-arrow.svg" alt="arraw-img"></button></div>
+
+      <div class="age-output">
+        <div class="output"><div class="output-year">--</div><div><p>years</p></div></div>
+        <div class="output"><div class="output-month">--</div><div><p>months</p></div></div>
+        <div class="output"><div class="output-day">--</div><div><p>days</p></div></div>
+      </div>
+    </main>
+    </div>
+    <script src="assets/scripts/age-calculator.js"></script>
+  </body> 
+</html>

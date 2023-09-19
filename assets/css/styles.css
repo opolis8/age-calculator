@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Offwhite: hsl(0, 0%, 94%);
+  --Lightgrey: hsl(0, 0%, 86%);
+  --Smokeygrey: hsl(0, 1%, 44%);
+  --Offblack: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Lightred: hsl(0, 100%, 67%);
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  background-color: var(--Offwhite);
+}
+
+.container {
+  width: 30rem;
+  height: 28rem;
+  padding: 1.5rem;
+  background-color: var(--White);
+
+  border-radius: 20px 20px 110px 20px;
+}
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 8rem;
+}
+.day-number,
+.month-number,
+.year-number {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--Lightgrey);
+  padding-left: 0.5rem;
+}
+
+.days,
+.months,
+.years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.day,
+.month,
+.year {
+  font-size: 0.7rem;
+  margin-right: 60px;
+  padding: 0px;
+  text-transform: uppercase;
+  color: var(--Smokeygrey);
+}
+.line {
+  border: 1px solid var(--Lightgrey);
+  width: 25rem;
+  height: 0px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-arrow {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--Purple);
+  border: none;
+}
+.output {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px;
+}
+
+.output p {
+  margin: 0px 0px 0px 10px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.output-year,
+.output-month,
+.output-day {
+  color: var(--Purple);
+}
+
+/*errors*/
+
+.day-error,
+.month-error,
+.year-error {
+  color: var(--Lightred);
+  font-family: Poppins, sans-serif;
+  font-style: italic;
+  margin-top: 0px;
+  font-size: 0.6rem;
+  opacity: 0;
+}
+
+.js-error {
+  color: var(--Lightred);
+  opacity: 1;
+}
+
+.error-border {
+  border-color: var(--Lightred);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+  }
+
+  .inputs-container {
+    margin: 0px;
+  }
+  .output {
+    font-size: 3rem;
+  }
+
+  .day-number,
+  .month-number,
+  .year-number {
+    font-size: 1.1rem;
+    width: 4rem;
+  }
+  .day,
+  .month,
+  .year {
+    font-size: 0.7rem;
+    margin-right: 30px;
+  }
+
+  .icon-arrow {
+    position: absolute;
+    top: 36%;
+    left: 40%;
+  }
+}
